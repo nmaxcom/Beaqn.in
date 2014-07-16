@@ -173,6 +173,10 @@ h1 sup {
 	background-color: rgba(0,255,0,0.3);
 }
 
+.navigation > .buttons > div > sup {
+	display: none;
+}
+
 /*------------------------------------------*/
 /* NAVIGATION INPUT */
 /*------------------------------------------*/
