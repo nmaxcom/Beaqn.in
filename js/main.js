@@ -253,7 +253,30 @@ $(document).ajaxStop(function() {
 	//----------------------------------------------------------------------------------//
 	// LIVE SEARCH
 	//----------------------------------------------------------------------------------//
-	$('#livesearch').keyup(function() {
+	$('#livesearch').keyup(function(e) {
+
+		// Scroll on ENTER
+		if(e.which == 13) {
+
+			// Scrolls to .listsInfo if it's visible
+			if( $(".listsInfo:visible").length == 1 ) {
+				$("html, body").animate({ scrollTop: $(".listsInfo").offset().top }, '1000', 'swing');
+			}
+
+			//Scrolls to .lists if .listsInfo isn't visible
+			else {
+				$("html, body").animate({ scrollTop: $(".lists").offset().top }, '1000', 'swing');
+			}
+
+		}
+
+		// Clear on ESC
+		else if(e.keyCode == 27) {
+			$(this).val("");
+			$("html, body").animate({ scrollTop: 0 }, '1000', 'swing');
+		}
+
+		// Live search
 		var f = $(this).val();
 		var regex = new RegExp(f, 'gi');
 
@@ -265,6 +288,7 @@ $(document).ajaxStop(function() {
 			if($(this).html().match(regex)) {
 				$(this).parent(".listWindow").show();
 			}
+
 		});
 
 		$("h3").each(function() {
@@ -272,20 +296,10 @@ $(document).ajaxStop(function() {
 			if($(this).html().match(regex)) {
 				$(this).parent("div").parent(".listWindow").show();
 			}
+
 		});
 
 	listWindowCheckForPressed();
-	});
-
-	// Scroll on Enter
-	$("#livesearch").keypress(function(e) {
-		if(e.which == 13) {
-			if( $(".listsInfo:visible").length == 1 ) {
-				$("html, body").animate({ scrollTop: $(".listsInfo").offset().top }, '1000', 'swing');
-			} else {
-			$("html, body").animate({ scrollTop: $(".lists").offset().top }, '1000', 'swing');
-			}
-		}
 	});
 
 
