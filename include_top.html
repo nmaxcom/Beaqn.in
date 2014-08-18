@@ -13,12 +13,20 @@
 
 <style>
 	#infotip {
-		color: rgba(255,255,255,0.7);
+		color: rgba(255,255,255,0.8);
 		margin: 10px 20px;
-		transition: color 0.1s ease-in-out;
 		cursor: default;
 	}
 	#infotip:hover {
 		color: rgba(255,255,255,1);
+	}
+	#infotip:hover::after {
+		content: " ";
+		width: 20px;
+		height: 20px;
+		background: url("../img/iconmonstr-smiley-sad-2-icon.svg") 50% no-repeat;
+		background-size: 18px;
+		margin-left: 3px;
+		position: absolute;
 	}
 </style>
