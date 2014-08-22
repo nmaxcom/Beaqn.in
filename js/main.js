@@ -28,11 +28,9 @@ $(document).ready(function(){
 	// INCLUDES LOADING
 	//----------------------------------------------------------------------------------//
 
-	//from localhost
-	//$(".top").load("http://localhost/Dev_DopeLists/include_top.html"); $(".footer").load("http://localhost/Dev_DopeLists/include_footer.html");
-
 	//from dopelists.com
-	$(".top").load("http://dopelists.com/include_top.html"); $(".footer").load("http://dopelists.com/include_footer.html");
+	$(".top").load("../include_top.html");
+	$(".footer").load("../include_footer.html");
 
 
 	//----------------------------------------------------------------------------------//
