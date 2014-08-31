@@ -399,7 +399,6 @@ h1 sup {
 .listWindow > div > li > a > sup {
 	font-size: 8px;
 	font-weight: bold;
-	background-color: #222222;
 	padding: 0 3px;
 	color: white;
 	text-transform: UPPERCASE;
@@ -424,7 +423,6 @@ h1 sup {
 .listWindow > h2 > sup {
 	font-size: 12px;
 	font-weight: bold;
-	background-color: #222222;
 	padding: 0 3px;
 	color: white;
 	text-transform: UPPERCASE;
@@ -436,7 +434,6 @@ h1 sup {
 .listWindow > div > h3 > sup {
 	font-size: 10px;
 	font-weight: bold;
-	background-color: #222222;
 	padding: 0 3px;
 	color: white;
 	text-transform: UPPERCASE;
@@ -464,7 +461,7 @@ h1 sup {
 }
 
 /* Site description arrow */
-.listWindow > div > li > div:before {
+.listWindow > div > li > div::before {
 	position: absolute;
 	left: 25px;
 
@@ -492,6 +489,7 @@ h1 sup {
 	height: 25px;
 	color: rgba(0,0,0,0.12);
 }
+
 
 /*----------------------------------------------------------------------------------*/
 /* FOOTER */

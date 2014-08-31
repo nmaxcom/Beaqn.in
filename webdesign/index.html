@@ -34,7 +34,7 @@
 	<link href="../css/listPage.css" rel="stylesheet" type="text/css">
 
 	<style>
-		body, .listWindow > div > li > a > sup, .listWindow > h2 > sup {
+		body, .listWindow sup {
 			background-color: rgba(35,120,168,1);
 		}
 
@@ -43,7 +43,7 @@
 		}
 
 		/*Sites descriptions*/
- 		.listWindow > div > li > div:before {
+ 		.listWindow > div > li > div::before {
  			color: rgba(35,120,168,1);
  		}
 
@@ -126,7 +126,7 @@
 					<a href="https://forrst.com/">Forrst</a>
 					<div></div></li>-->
 				<li>
-					<a href="http://cargocollective.com/">Cargo Collective</a>
+					<a href="http://cargocollective.com/">Cargo Collective<sup>new</sup></a>
 					<div></div></li>
 				<li>
 					<a href="http://www.deviantart.com/">deviantArt</a>
@@ -382,10 +382,10 @@
 					<a href="http://backbonejs.org/">Backbone.js</a>
 					<div></div></li>
 				<li>
-					<a href="http://underscorejs.org/">Underscore.js<sup>new</sup></a>
+					<a href="http://underscorejs.org/">Underscore.js</a>
 					<div></div></li>
 				<li>
-					<a href="http://jquery.com/">jQuery<sup>new</sup></a>
+					<a href="http://jquery.com/">jQuery</a>
 					<div></div></li>
 				<li>
 					<a href="http://www.browserstack.com">Browser Stack</a>
@@ -514,8 +514,11 @@
 					<a href="https://www.iconfinder.com/">IconFinder</a>
 					<div></div></li>
 				<li>
-					<a href="http://glyphsearch.com/">GlyphSearch</a>
+					<a href="http://glyphsearch.com/"><img src="http://glyphsearch.com/favicon.ico">GlyphSearch</a>
 					<div></div></li>
+				<li>
+					<a href="https://icomoon.io/">IcoMoon<sup>new</sup></a>
+					<div>Custom Built and Crisp Icon Fonts, Done Right.</div></li>
 				<li>
 					<a href="http://www.flaticon.com/">FlatIcon</a>
 					<div></div></li>
@@ -528,8 +531,11 @@
 					<a href="http://iconmonstr.com/">IconMonstr</a>
 					<div>Free &amp; for commercial use without attribution icons in .png and .svg.</div></li>
 				<li>
-					<a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome<sup>new</sup></a>
+					<a href="http://fortawesome.github.io/Font-Awesome/"><img src="http://fortawesome.github.io/Font-Awesome/assets/ico/favicon.ico">Font Awesome<sup>new</sup></a>
 					<div>The iconic font and CSS toolkit.</div></li>
+				<li>
+					<a href="http://typicons.com/">Typicons<sup>new</sup></a>
+					<div>Pixel perfect all purpose vector icons.</div></li>
 				<li>
 					<a href="http://livicons.com/">LivIcons</a>
 					<div>Animated icons font.</div></li>
@@ -559,14 +565,9 @@
 				<li>
 					<a href="http://search.creativecommons.org">Creative Commons Search</a>
 					<div></div></li>
-			</div>
-			<div><h3>Free Videos</h3>
 				<li>
-					<a href="http://mazwai.com/">Mazwai</a>
-					<div>Free and very nice videos in .mp4 and .webm to use with attribution both in commercial and personal projects.</div></li>
-				<li>
-					<a href="http://vimeo.com/channels/freestockfootage/">Free Stock Footage<sup>new</sup></a>
-					<div>Royalty Free Stock Video for Free Personal, Corporate or Commercial Use.</div></li>
+					<a href="http://www.deviantart.com/resources/stockart/">deviantArt stock images</a>
+					<div></div></li>
 			</div>
 			<div><h3>Free Images</h3>
 				<li>
@@ -582,43 +583,58 @@
 					<a href="http://www.imcreator.com/free"><img src="../img/blankfavicon.png">IM Free</a>
 					<div>A curated collection of free resources, all for commercial use.</div></li>
 				<li>
-					<a href="http://nos.twnsnd.co">New Old Stock</a>
-					<div>Vintage photos from the public archives free of known copyright restrictions.</div></li>
-				<li>
 					<a href="http://littlevisuals.co">Little Visuals</a>
 					<div>7 high resolution images zipped up in your inbox every 7 days. Free for commercial use.</div></li>
 				<li>
 					<a href="http://superfamous.com">Superfamous</a>
 					<div>High quality free for commercial use pictures - as long as credit is provided.</div></li>
 				<li>
-					<a href="http://magdeleine.co/browse/">Magdeleine<sup>new</sup></a>
+					<a href="http://magdeleine.co/browse/">Magdeleine</a>
 					<div>Hand-picked free photos.</div></li>
 				<li>
-					<a href="http://jaymantri.com/">Jay Mantri<sup>new</sup></a>
+					<a href="http://jaymantri.com/">Jay Mantri</a>
 					<div>Public Domain images. 7 new photos every thursday.</div></li>
 				<li>
-					<a href="http://startupstockphotos.com/">Startup Stock Photos<sup>new</sup></a>
+					<a href="http://startupstockphotos.com/">Startup Stock Photos</a>
 					<div>Take 'em, these things are free. Go. Make something.</div></li>
 				<li>
-					<a href="http://getrefe.tumblr.com/">Refe (Free)<sup>new</sup></a>
-					<div>Photos created with mobile phones. They are suprisingly good.</div></li>
+					<a href="http://getrefe.tumblr.com/">Refe (Free)</a>
+					<div>Free photos created with mobile phones. They are suprisingly good.</div></li>
 				<li>
-					<a href="http://travelcoffeebook.tumblr.com/">Travel Coffee Book<sup>new</sup></a>
+					<a href="http://hiresstock.com/">HiResStock<sup>new</sup></a>
+					<div> Free &amp; Premium High Resolution Photos for Designer.</div></li>
+				<li>
+					<a href="http://travelcoffeebook.tumblr.com/">Travel Coffee Book</a>
 					<div>10 new photos every 10 days. All photos are listed under cc0. That means you can do whatever you want with them.</div></li>
 				<li>
-					<a href="http://join.deathtothestockphoto.com">Death to the Stock Photo</a>
-					<div>Free monthly photos e-mailed to you for all your creative needs. Free for commercial use.</div></li>
+					<a href="http://pixabay.com/">Pixabay<sup>new</sup></a>
+					<div>You can find there many public domain stock images.</div></li>
 				<li>
 					<a href="http://picjumbo.com/">Pic Jumbo</a>
 					<div>Free &amp; for commercial use high quality pictures.</div></li>
 				<li>
-					<a href="http://www.freeimages.com">Free Images (old SXC.HU)</a>
-					<div></div></li>
+					<a href="http://nos.twnsnd.co">New Old Stock</a>
+					<div>Vintage photos from the public archives free of known copyright restrictions.</div></li>
 				<li>
-					<a href="http://www.deviantart.com/resources/stockart/">deviantArt stock images</a>
+					<a href="http://www.morguefile.com"><img src="../img/blankfavicon.png">MorgueFile<sup>new</sup></a>
+					<div>The morguefile contains photographs freely contributed by many artists to be used in creative projects by visitors to the site.</div></li>
+				<li>
+					<a href="http://splitshire.com/">SplitShire<sup>new</sup></a>
+					<div>Delicious free stock photos for personal &amp; commercial use.</div></li>
+				<li>
+					<a href="http://jeshoots.com/">Jéshoots<sup>new</sup></a>
+					<div>Photos for business or personal use in high resolution for free.</div></li>
+				<li>
+					<a href="http://join.deathtothestockphoto.com">Death to the Stock Photo</a>
+					<div>Free monthly photos e-mailed to you for all your creative needs. Free for commercial use.</div></li>
+				<li>
+					<a href="http://www.freeimages.com">Free Images (old SXC.HU)</a>
 					<div></div></li>
 			</div>
 			<div><h3>Paid Images</h3>
+				<li>
+					<a href="http://www.istockphoto.com">iStock<sup>new</sup></a>
+					<div>Most popular stock images paid service.</div></li>
 				<li>
 					<a href="https://creativemarket.com/photos">Creative Market Photos</a>
 					<div>High quality paid stock photos.</div></li>
@@ -637,6 +653,19 @@
 				<li>
 					<a href="https://placeit.net">Place It</a>
 					<div>Generate product screenshots in real environments. It's paid service but you can generate free images that are 400x400px and non-commercial.</div></li>
+			</div>
+			<div><h3>Free Videos</h3>
+				<li>
+					<a href="http://mazwai.com/">Mazwai</a>
+					<div>Free and very nice videos in .mp4 and .webm to use with attribution both in commercial and personal projects.</div></li>
+				<li>
+					<a href="http://vimeo.com/channels/freestockfootage/">Free Stock Footage<sup>new</sup></a>
+					<div>Royalty Free Stock Video for Free Personal, Corporate or Commercial Use.</div></li>
+			</div>
+			<div><h3>Paid Videos</h3>
+				<li>
+					<a href="http://dissolve.com/">Dissolve<sup>new</sup></a>
+					<div>HD stock video footage.</div></li>
 			</div>
 		</ol>
 
@@ -729,23 +758,14 @@
 		<ol class="listWindow" id="resources"><h2>Other Resources</h2>
 			<div>
 				<li>
-					<a href="https://github.com/bayandin/awesome-awesomeness">Awesome Awesomeness</a>
-					<div>A curated list about lists about everything.</div></li>
-				<li>
-					<a href="https://github.com/dypsilon/frontend-dev-bookmarks">Frontend Bookmarks</a>
-					<div>"A huge list of frontend development resources I collected over time. Sorted from general knowledge at the top to concrete problems at the bottom."</div></li>
-				<li>
-					<a href="http://www.webdesignrepo.com/">WebdesignRepo</a>
-					<div>Didn't know about this when I was creating this site. It's another website which lists links about webdesign. It's really comprehensive!</div></li>
-				<li>
-					<a href="http://www.devlinks.co.uk/">DevLinks</a>
-					<div>Collection of Web Development Links, Services, Tools & Resources.</div></li>
-				<li>
-					<a href="http://webcomponents.org/">Web Components</a>
-					<div>WebComponents.org is where pioneers and community-members of the Web Components ecosystem (like Polymer, X-tags, and other interested parties) document web components best practices so that others can follow the same path instead of needlessly striking out on their own.</div></li>
+					<a href="http://pineapple.io/">Pineapple</a>
+					<div>It's like reddit but for web designers &alt; developers.</div></li>
 				<li>
 					<a href="http://devdocs.io/">DevDocs</a>
 					<div>DevDocs combines multiple API documentations in a fast, organized, and searchable interface.</div></li>
+				<li>
+					<a href="http://www.cheetyr.com">Cheetyr<sup>new</sup></a>
+					<div>A handy collection of cheatsheets and shortcuts to speed up the work of designers and developers.</div></li>
 				<li>
 					<a href="http://www.webplatform.org/">Web Platform</a>
 					<div>The latest information on how to use the technology that runs the web — HTML, CSS, JavaScript and more.</div></li>
@@ -753,26 +773,49 @@
 					<a href="http://findguidelin.es/">Find Guidelines</a>
 					<div>If you need to find specific brand assets then this site may reduce you searching time.</div></li>
 				<li>
-					<a href="http://pineapple.io/">Pineapple</a>
-					<div>It's like reddit but for web designers &alt; developers.</div></li>
-				<li>
-					<a href="http://www.designerslist.info/">Designers List</a>
-					<div>Really similar site to DopeLists (I found it after creating this repository). Worth checking.</div></li>
-				<li>
 					<a href="http://www.pileofpixels.com/"><img src="../img/blankfavicon.png">Pile of Pixels</a>
 					<div>Lists of best designers around the world.</div></li>
 				<li>
 					<a href="http://www.unheap.com/">Unheap</a>
 					<div>A tidy repository of jQuery plugins.</div></li>
 				<li>
-					<a href="http://cdn.jque.re/">jQuery Plugins CDN<sup>new</sup></a>
+					<a href="http://cdn.jque.re/">jQuery Plugins CDN</a>
 					<div>Handpicked jQuery Plugins CDN (Content Delivery Network).</div></li>
+				<li>
+					<a href="http://webcomponents.org/">Web Components</a>
+					<div>WebComponents.org is where pioneers and community-members of the Web Components ecosystem (like Polymer, X-tags, and other interested parties) document web components best practices so that others can follow the same path instead of needlessly striking out on their own.</div></li>
 				<li>
 					<a href="http://planetozh.com/projects/lightbox-clones/">Lightbox Clones Matrix</a>
 					<div>Comparison of various scripts that display images and other objects in somehow cool CSS popups.</div></li>
 				<li>
 					<a href="https://github.com/darcyclarke/Front-end-Developer-Interview-Questions">Frontend Job Interview Questions</a>
 					<div>This repo contains a number of front-end interview questions that can be used when vetting potential candidates.</div></li>
+			</div>
+			<div><h3>Link Repositories<sup>new</sup></h3>
+				<li>
+					<a href="https://github.com/bayandin/awesome-awesomeness">Awesome Awesomeness</a>
+					<div>A curated list about lists about everything.</div></li>
+				<li>
+					<a href="https://github.com/dypsilon/frontend-dev-bookmarks">Frontend Bookmarks</a>
+					<div>"A huge list of frontend development resources I collected over time. Sorted from general knowledge at the top to concrete problems at the bottom."</div></li>
+				<li>
+					<a href="http://www.webdesignrepo.com/">WebdesignRepo</a>
+					<div>It's another website which lists links &amp; articles about webdesign. It's really comprehensive!</div></li>
+				<li>
+					<a href="http://webfieldmanual.com/">Web Design Field Manual<sup>new</sup></a>
+					<div>Good looking web design resources repository.</div></li>
+				<li>
+					<a href="http://www.faburls.com/">FabURLs<sup>new</sup></a>
+					<div>A really handy list of fabulous URLs for web designers and developers.</div></li>
+				<li>
+					<a href="http://oozled.com/">Oozled<sup>new</sup></a>
+					<div>Curated resources for everything creative.</div></li>
+				<li>
+					<a href="http://www.devlinks.co.uk/">DevLinks</a>
+					<div>Collection of Web Development Links, Services, Tools &amp; Resources.</div></li>
+				<li>
+					<a href="http://www.designerslist.info/">Designers List</a>
+					<div>Really similar site to DopeLists (I found it after creating this repository). Worth checking.</div></li>
 			</div>
 		</ol>
 
@@ -1187,7 +1230,7 @@
 					<a href="http://learnlayout.com/">Learn CSS Layout</a>
 					<div>This site teaches the CSS fundamentals that are used in any website's layout.</div></li>
 				<li>
-					<a href="http://cssguidelin.es/">CSS Guidelines<sup>new</sup></a>
+					<a href="http://cssguidelin.es/">CSS Guidelines</a>
 					<div>High-level advice and guidelines for writing sane, manageable, scalable CSS.</div></li>
 				<li>
 					<a href="http://www.codeavengers.com/">Code Avengers</a>
@@ -1210,6 +1253,9 @@
 				<li>
 					<a href="http://flukeout.github.io/">CSS Diner</a>
 					<div>Practice your CSS selectors skills.</div></li>
+				<li>
+					<a href="http://alexnisnevich.github.io/untrusted/">Untrusted<sup>new</sup></a>
+					<div>A user javascript adventure.</div></li>
 				<li>
 					<a href="http://tevko.github.io/practice/random.html"><img src="http://tevko.github.io/practice/favicon.ico">Build Something Random</a>
 					<div>Practice your front-end coding skills with random challenges.</div></li>
