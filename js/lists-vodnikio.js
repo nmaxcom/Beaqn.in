@@ -9,12 +9,12 @@ $(document).ready(function(){
 	// GOOGLE ANALYTICS
 	//----------------------------------------------------------------------------------//
 
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	  ga('create', 'UA-49779109-1', 'dopelists.com');
-	  ga('send', 'pageview');
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-46688343-6', 'auto');
+	ga('send', 'pageview');
 
 
 	//----------------------------------------------------------------------------------//
@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 	//from dopelists.com
 	$(".top").load("../include_top.html");
-	$(".footer").load("../include_footer.html");
+	$(".follows").load("../include_follows.html");
 
 
 	//----------------------------------------------------------------------------------//
@@ -63,21 +63,21 @@ $(document).ready(function(){
 
 	// Displays description on hover
 	$('.listWindow > div > li').mouseenter(function() {
-		$(this).children('div').slideDown(0);
+		$(this).children('div').show();
 	});
 	$('.listWindow > div > li').mouseleave(function() {
-		$(this).children('div').slideUp(0);
+		$(this).children('div').hide();
 	});
 	$('.listWindow > div > li > div').mouseenter(function() {
-		$(this).slideUp(0);
+		$(this).hide();
 	});
 
 	// Displays description on focus
 	$('.listWindow > div > li').focusin(function() {
-		$(this).children('div').slideDown(0);
+		$(this).children('div').show();
 	});
 	$('.listWindow > div > li').focusout(function() {
-		$(this).children('div').slideUp(0);
+		$(this).children('div').hide();
 	});
 
 
@@ -153,7 +153,7 @@ $(document).ajaxStop(function() {
 	// NAVIGATION BUTTONS CREATOR
 	//----------------------------------------------------------------------------------//
 
-	$(".navigation > .buttons").append( "<span class='show'>All</span>" );
+	$(".navigation > .buttons").append( "<span class='show'><i class='fa fa-asterisk'></i></span>" );
 
 	$(".listWindow").each(function() {
 
@@ -197,7 +197,7 @@ $(document).ajaxStop(function() {
 			//$( ".navigation > .buttons > .show" ).text("Show All");
 		}
 
-		if ( $(".listWindow:visible").length == 0 ) {
+		if ( $(".listWindow:visible").length === 0 ) {
 			$(".listsInfo").show();
 			$(".listsInfo").text("No results...");
 		} else {
@@ -206,7 +206,7 @@ $(document).ajaxStop(function() {
 
 		$(".lists").masonry();
 
-	};
+	}
 
 	//
 	listWindowCheckForPressed();
@@ -251,13 +251,13 @@ $(document).ajaxStop(function() {
 	//----------------------------------------------------------------------------------//
 	// LIVE SEARCH
 	//----------------------------------------------------------------------------------//
-	$('#livesearch').keyup(function(e) {
-
+	$("#livesearch").keyup(function(event) {
+		
 		// Scroll on ENTER
-		if(e.which == 13) {
+		if (event.keyCode === 13) {
 
 			// Scrolls to .listsInfo if it's visible
-			if( $(".listsInfo:visible").length == 1 ) {
+			if ( $(".listsInfo:visible").length == 1 ) {
 				$("html, body").animate({ scrollTop: $(".listsInfo").offset().top }, '1000', 'swing');
 			}
 
@@ -265,11 +265,10 @@ $(document).ajaxStop(function() {
 			else {
 				$("html, body").animate({ scrollTop: $(".lists").offset().top }, '1000', 'swing');
 			}
-
 		}
 
 		// Clear on ESC
-		else if(e.keyCode == 27) {
+		else if (event.which === 27) {
 			$(this).val("");
 			$("html, body").animate({ scrollTop: 0 }, '1000', 'swing');
 		}
@@ -279,34 +278,31 @@ $(document).ajaxStop(function() {
 		var regex = new RegExp(f, 'gi');
 
 		window.location.hash = "";
-		$('.listWindow').hide();
+		$(".listWindow").hide();
 
 		$("h2").each(function() {
-
 			if($(this).html().match(regex)) {
 				$(this).parent(".listWindow").show();
 			}
-
 		});
 
 		$("h3").each(function() {
-
 			if($(this).html().match(regex)) {
 				$(this).parent("div").parent(".listWindow").show();
 			}
-
 		});
 
-	listWindowCheckForPressed();
+		listWindowCheckForPressed();
 	});
+
 });
 
 //----------------------------------------------------------------------------------//
 //
-// AJAX STOP
+// SITE LOAD
 //
 //----------------------------------------------------------------------------------//
-$( window ).load(function() {
+$(window).load(function() {
 
 	//----------------------------------------------------------------------------------//
 	// HASHLINKS FIX
