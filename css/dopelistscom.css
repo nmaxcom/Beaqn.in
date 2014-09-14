@@ -153,9 +153,9 @@ body.afterformat .listsInfo
 }
 
 .top > .tab-index {
-	background: url("../img/logo-bright_linksvodnikio.svg") top center no-repeat;
+	background: url("../img/logo_dopelists.png") top center no-repeat;
 	background-color: rgba(0,0,0,0.7);
-	background-size: 110px;
+	background-size: 160px;
 }
 
 .top > .tab-index:hover {
