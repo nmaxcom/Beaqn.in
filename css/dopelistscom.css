@@ -685,7 +685,7 @@ body.afterformat .listsInfo
 		font-size: 12px;
 	}
 	.top > a:nth-of-type(1) {
-		background: url("../img/logo-vodnik-io-bright.svg") 50% no-repeat;
+		background: url("../img/logo_dopelists.png") 50% no-repeat;
 		background-color: rgba(0,0,0,0.7);
 		background-size: 100px;
 	}
@@ -713,7 +713,7 @@ body.afterformat .listsInfo
 		font-size: 9px;
 	}
 	.top > a:nth-of-type(1) {
-		background: url("../img/logo-vodnik-io-bright.svg") 50% no-repeat;
+		background: url("../img/logo_dopelists.png") 50% no-repeat;
 		background-color: rgba(0,0,0,0.7);
 		background-size: 70px;
 	}
