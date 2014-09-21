@@ -701,6 +701,7 @@ body.afterformat .listsInfo
 .footer > .definition > div {
 	font-size: 40px;
 	font-weight: bold;
+	word-break: break-all;
 }
 
 .footer > .definition > p {
