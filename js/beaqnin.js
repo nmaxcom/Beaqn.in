@@ -13,7 +13,7 @@ $(document).ready(function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-49779109-1', 'auto');
+	ga('create', 'UA-46688343-7', 'auto');
 	ga('send', 'pageview');
 
 
@@ -23,12 +23,24 @@ $(document).ready(function(){
 
 	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
+	//----------------------------------------------------------------------------------//
+	// ANNOUNCEMENT CLOSE
+	//----------------------------------------------------------------------------------//
+
+	if( $.cookie('announcement') == "closed") {
+		$(".announcement").remove();
+	}
+
+	$(".announcement .close").click(function() {
+		$(this).parent().slideUp(500);
+		$.cookie('announcement','closed', { expires: 7, path: '/' });
+	});
+
 
 	//----------------------------------------------------------------------------------//
 	// INCLUDES LOADING
 	//----------------------------------------------------------------------------------//
 
-	//from dopelists.com
 	$(".top").load("../include_top.html");
 	$(".follows").load("../include_follows.html");
 
@@ -91,9 +103,6 @@ $(document).ready(function(){
 		//Prepends blankfavicon <img> in list element a (kind of doesn't work on Chrome and Firefox)
 		$(this).prepend("<img src='../img/blankfavicon.png'>");
 
-		//Gets href value of list element a
-		var siteurl = $(this).attr("href");
-
 		//Sets first <img> src as Google favicons service with added site url
 		//Alternatives:
 		// https://s2.googleusercontent.com/s2/favicons?domain_url= [best]
@@ -103,7 +112,13 @@ $(document).ready(function(){
 		// http://www.google.com/s2/favicons?domain= [unreliable, sometimes blocked by anti-spam bots]
 		// http://g.etfv.co/ [slow]
 		// http://fvicon.com/ [slow and unreliable, but many features]
-		$(this).children("img:nth-of-type(1)").attr("src","https://s2.googleusercontent.com/s2/favicons?domain_url=" + siteurl);
+
+		//Vars
+		var siteurl = $(this).attr("href");
+		var siteurl_indexfavicon = siteurl + "/favicon.ico";
+		var siteurl_servicefavicon = "https://s2.googleusercontent.com/s2/favicons?domain_url=" + siteurl;
+
+		$(this).children("img:nth-of-type(1)").attr("src", siteurl_servicefavicon);
 
 		//If second <img> exists (manually inserted <img> inside a - because sometimes Google favicons don't work)
 		if ($(this).children("img:nth-of-type(2)").length > 0) {

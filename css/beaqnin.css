@@ -100,7 +100,6 @@ body.afterformat .listsInfo
 
 { color: #975e5a; }
 
-
 /*----------------------------------------------------------------------------------*/
 /* TOP */
 /*----------------------------------------------------------------------------------*/
@@ -127,6 +126,7 @@ body.afterformat .listsInfo
 .top > a {
 	display: block;
 	float: left;
+	/*width: calc(20% - 3px);*/
 	width: 20%;
 	overflow: hidden;
 	height: 40px;
@@ -137,6 +137,11 @@ body.afterformat .listsInfo
 	font-weight: bold;
 	white-space: nowrap;
 	line-height: 40px;
+	/*border-right: 3px solid rgba(0,0,0,0.7);*/
+}
+
+.top > a:last-of-type {
+	border: none;
 }
 
 /* Site [new] sup */
@@ -153,9 +158,11 @@ body.afterformat .listsInfo
 }
 
 .top > .tab-index {
-	background: url("../img/logo_dopelists.png") top center no-repeat;
+	/*border: none;*/
+	/*width: calc( 20% + 3px );*/
+	background: url("../img/logo_beaqnin.png") top center no-repeat;
 	background-color: rgba(0,0,0,0.7);
-	background-size: 160px;
+	background-size: 180px;
 }
 
 .top > .tab-index:hover {
@@ -278,6 +285,46 @@ body.afterformat .listsInfo
 *:-ms-input-placeholder {
 	color: white;
 	opacity: 0.7;
+}
+
+/*----------------------------------------------------------------------------------*/
+/* ANNOUNCEMENT */
+/*----------------------------------------------------------------------------------*/
+
+.announcement {
+	display: block;
+	background-color: rgb(255, 255, 180);
+	box-sizing: border-box;
+	padding: 9px 30px 9px 47px;
+	color: rgb(117, 117, 0);
+	line-height: 1.6;
+	position: relative;
+}
+
+.announcement a {
+	font-weight: bold;
+	color: rgb(117, 117, 0);
+	transition: color 200ms ease-in-out;
+}
+
+.announcement a:hover {
+	color: rgb(161, 162, 0);
+}
+
+.announcement .close {
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/blankfavicon.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 12px;
+	left: 25px;
+	transition: transform 300ms ease-in-out;
+}
+
+.announcement .close:hover {
+	transform: rotate(90deg);
+	cursor: pointer;
 }
 
 /*----------------------------------------------------------------------------------*/
@@ -408,7 +455,7 @@ body.afterformat .listsInfo
 
 /* Wraps lists and descriptions also sub-categories */
 .listWindow > div {
-	counter-reset: dopeCounter;
+	counter-reset: BeaqninCounter;
 	position: relative;
 }
 
@@ -557,8 +604,8 @@ body.afterformat .listsInfo
 
 /* Counter */
 .listWindow > div > li::before {
-	counter-increment: dopeCounter 1;
-	content: counter(dopeCounter, decimal-leading-zero);
+	counter-increment: BeaqninCounter 1;
+	content: counter(BeaqninCounter, decimal-leading-zero);
 
 	position: absolute;
 	right: 0;
@@ -681,15 +728,16 @@ body.afterformat .listsInfo
 /* RESPONSIVE */
 /*----------------------------------------------------------------------------------*/
 @media (max-width: 700px) {
-	.top > a > h1 {
+	.top > a {
 		font-size: 12px;
 	}
 	.top > a:nth-of-type(1) {
-		background: url("../img/logo_dopelists.png") 50% no-repeat;
+		background-position: 50%;
+		background-repeat: no-repeat;
 		background-color: rgba(0,0,0,0.7);
 		background-size: 100px;
 	}
-	h1 sup {
+	.top a sup {
 		font-size: 8px;
 	}
 }
@@ -709,15 +757,16 @@ body.afterformat .listsInfo
 	.listWindow > div > li > div {
 		width: 270px;
 	}
-	.top > a > h1 {
+	.top > a {
 		font-size: 9px;
 	}
 	.top > a:nth-of-type(1) {
-		background: url("../img/logo_dopelists.png") 50% no-repeat;
+		background-position: 50%;
+		background-repeat: no-repeat;
 		background-color: rgba(0,0,0,0.7);
 		background-size: 70px;
 	}
-	h1 sup {
+	.top a sup {
 		font-size: 7px;
 	}
 }

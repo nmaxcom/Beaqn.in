@@ -14,10 +14,27 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<!-- Site informations -->
-	<title>Front End | DopeLists.com - Curated Resources Repositories</title>
+	<title>Front End | Beaqn.in - Curated Resources Repositories</title>
 	<meta name="author" content="DominikSerafin.com">
 	<meta name="copyright" content="DominikSerafin.com">
 	<meta name="description" content="Organized links about front end development.">
+
+	<!-- Open Graph -->
+	<meta property="og:site_name" content="Beaqn.in - Curated Resources Repositories">
+	<meta property="og:title" content="Front End Repository">
+	<meta property="og:description" content="Organized links about front end development.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://Beaqn.in/frontend/">
+	<meta property="og:image" content="http://beaqn.in/img/og_all.jpg">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@Beaqnin">
+	<meta name="twitter:creator" content="@SerafinDominik">
+	<meta name="twitter:title" content="Front End | Beaqn.in - Curated Resources Repositories">
+	<meta name="twitter:domain" content="http://Beaqn.in/">
+	<meta name="twitter:description" content="Organized links about front end development.">
+	<meta name="twitter:image:src" content="http://beaqn.in/img/og_all.jpg">
 
 	<!-- SEO -->
 	<meta name="robots" content="all">
@@ -28,12 +45,13 @@
 	<!-- Stylesheets -->
 	<link href="../css/reset.css" rel="stylesheet" type="text/css">
 	<link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
-	<link href="../css/dopelistscom.css" rel="stylesheet" type="text/css">
+	<link href="../css/beaqnin.css" rel="stylesheet" type="text/css">
 
 	<!-- Scripts -->
-	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery-1.11.1.min.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
 	<script src="../js/masonry.pkgd.min.js"></script>
-	<script src="../js/dopelistscom.js"></script>
+	<script src="../js/beaqnin.js"></script>
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="../favicon/favicon.ico">
@@ -53,28 +71,47 @@
 	<meta name="msapplication-TileColor" content="#ffc40d">
 	<meta name="msapplication-TileImage" content="../favicon/mstile-144x144.png">
 	<meta name="msapplication-config" content="../favicon/browserconfig.xml">
-
-	<!-- Open Graph -->
-	<meta property="og:site_name" content="DopeLists.com - Curated Resources Repositories">
-	<meta property="og:title" content="Front End Repository">
-	<meta property="og:description" content="Organized links about front end development.">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://DopeLists.com/frontend/">
-	<meta property="og:image" content="http://DopeLists.com/img/og_dopelistscom.jpg">
-
-	<!-- Twitter Card -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@DopeLists">
-	<meta name="twitter:creator" content="@SerafinDominik">
-	<meta name="twitter:title" content="Front End | DopeLists.com - Curated Resources Repositories">
-	<meta name="twitter:domain" content="http://DopeLists.com/">
-	<meta name="twitter:description" content="Organized links about front end development.">
-	<meta name="twitter:image:src" content="http://DopeLists.com/img/og_dopelistscom.jpg">
 </head>
 
 <body class="frontend">
 
 	<div class="top"><!--include_top.html--></div>
+
+	<div class="announcement">
+		<div class="close" title="Remove this announcement for 7 days">&nbsp;</div>
+	
+		<strong>DopeLists.com is now Beaqn.in</strong> and it'd be cool if you could
+	
+		<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FBeaqnin%2F353423241483078&amp;width=50&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=20&amp;locale=en_US" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:20px; vertical-align:bottom; padding-bottom:1px;" allowTransparency="true"></iframe>
+	
+		<a href="https://www.facebook.com/pages/Beaqnin/353423241483078" target="_blank">new fanpage</a> or share this site if you find it useful. 
+	
+		<div style="display:none;" id="fb-root"></div>
+	
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	
+		<div class="fb-share-button" data-layout="button_count" data-href="http://Beaqn.in/frontend/" style="display:inline-block; margin-right:3px; margin-left:1px; height:20px; vertical-align:bottom; padding-bottom:2px;"></div>
+	
+		<iframe src="https://platform.twitter.com/widgets/tweet_button.html?url=http://Beaqn.in/frontend/&lang=en&hashtags=frontend,webdevelopment,resources&text=Beaqn.in is a curated repository of useful websites." allowtransparency="true" frameborder="0" scrolling="no" style="width:81px; height:20px; vertical-align:bottom; padding-bottom:2px;"></iframe>
+		
+		<div style="display:inline-block; height:20px; vertical-align:bottom; padding-bottom:2px;"><div class="g-plusone" data-size="medium"></div>
+		
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/platform.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
+		
+		</div>
+	</div>
 
 	<div class="advertisement adTop">
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -91,13 +128,13 @@
 
 	<div class="lists">
 
-		<ol class="listWindow" id="sponsored"><h2><i class="fa fa-star"></i>Sponsored</h2>
+		<!--<ol class="listWindow" id="sponsored"><h2><i class="fa fa-star"></i>Sponsored</h2>
 			<div>
 				<li>
-					<a href="mailto:dominikdsgnr@gmail.com"><img src="../img/plusfavicon.png">Advertise here</a>
+					<a href="mailto:---"><img src="../img/plusfavicon.png">Advertise here</a>
 					<div></div></li>
 			</div>
-		</ol>
+		</ol>-->
 
 
 		<ol class="listWindow" id="social"><h2><i class="fa fa-group"></i>Social Sites</h2>
@@ -715,7 +752,7 @@
 			<div>
 				<li>
 					<a href="http://saijogeorge.com/best-marketing-tools/"><img src="http://saijogeorge.com/best-marketing-tools/favicon.ico">Best Marketing Tools</a>
-					<div>Saijo George took DopeLists code and created his own list about best marketing tools. And it's very useful.</div></li>
+					<div>Saijo George took Beaqn.in code and created his own list about best marketing tools. And it's very useful.</div></li>
 				<li>
 					<a href="http://www.google.com/analytics"><img src="http://www.google.com/analytics/images/favicon.ico">Google Analytics</a>
 					<div></div></li>
@@ -1080,33 +1117,41 @@
 		
 	</div>
 
-
 	<div class="footer">
 
 		<div class="bordertop"></div>
 
 		<div class="definition">
-			<div>DopeLists.com</div>
+			<div>Beaqn.in/frontend</div>
+		</div>
+
+		<div class="social">
+			<a title="Beaqn.in on Facebook" href="https://www.facebook.com/pages/Beaqnin/353423241483078">Beaqn.in on Facebook</a>
+			<a title="Beaqn.in on Twitter" href="http://twitter.com/beaqnin">@Beaqnin</a>
+			<a title="Beaqn.in on GitHub" href="https://github.com/DominikSerafin/Beaqn.in">Beaqn.in on GitHub</a>
 		</div>
 
 		<div class="follows"><!--include_follows.html--></div>
 
 		<div class="siteinfo">
 
-			<p>The site categorizes nice and useful websites about various fields of interests from all over the internet.</p>
+			<p>Beaqn.in lists useful websites in nice organized categories.</p>
 
-			<p>If you want to report any error / dead link, suggest new site(s) and etc. please use <a href="mailto:DopeLists@gmail.com" target="_blank">DopeLists@gmail.com</a>.</p>
+			<p>If you want to report any error / dead link, suggest new site(s) and etc. please use <a href="mailto:Beaqnin@gmail.com" target="_blank">Beaqnin@gmail.com</a>.</p>
 
 			<p>This project was created and is curated by <a href="//DominikSerafin.com/" target="_blank">Dominik Serafin</a>.
 			You can <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=727DR9ZWZELQ2" title="" target="_blank">buy me a beer</a> or <a href="mailto:DominikDsgnr@gmail.com" title="" target="_blank">hire me</a>.</p>
 			
-
 			<p><strong>Credits:</strong>
 				<a href="//pages.github.com/" target="_blank">GitHub Pages</a>,
-				<a href="//meyerweb.com/eric/tools/css/reset/" target="_blank">CSS Reset</a>,
+				<a href="//jquery.com/" target="_blank">jQuery</a>,
 				<a href="//masonry.desandro.com/" target="_blank">Masonry</a>,
+				<a href="//github.com/carhartl/jquery-cookie" target="_blank">jQuery cookie</a>,
+				<a href="//realfavicongenerator.net/" target="_blank">Real Favicon Generator</a>,
+				<a href="//meyerweb.com/eric/tools/css/reset/" target="_blank">CSS Reset</a>,
 				<a href="//fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>,
-				<a href="//realfavicongenerator.net/" target="_blank">Real Favicon Generator</a>.
+				<a href="//www.google.com/fonts/specimen/Open+Sans" target="_blank">Open Sans</a>,
+				<a href="//fontfabric.com/choplin-free-font/" target="_blank">Choplin</a>.
 			</p>
 		</div>
 
