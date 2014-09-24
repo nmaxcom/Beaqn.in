@@ -27,13 +27,13 @@ $(document).ready(function(){
 	// ANNOUNCEMENT CLOSE
 	//----------------------------------------------------------------------------------//
 
-	if( $.cookie('announcement') == "closed") {
+	if( $.cookie('announcement2') == "closed") {
 		$(".announcement").remove();
 	}
 
 	$(".announcement .close").click(function() {
 		$(this).parent().slideUp(500);
-		$.cookie('announcement','closed', { expires: 7, path: '/' });
+		$.cookie('announcement2','closed', { expires: 7, path: '/' });
 	});
 
 
