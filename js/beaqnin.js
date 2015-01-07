@@ -27,15 +27,23 @@ $(document).ready(function(){
 	// ANNOUNCEMENT CLOSE
 	//----------------------------------------------------------------------------------//
 
-	if( $.cookie('announcement2') == "closed") {
-		$(".announcement").remove();
+	if( $.cookie('announcement-dopelists') == "closed") {
+		$(".announcement.dopelists").remove();
 	}
 
-	$(".announcement .close").click(function() {
+	$(".announcement.dopelists .close").click(function() {
 		$(this).parent().slideUp(500);
-		$.cookie('announcement2','closed', { expires: 7, path: '/' });
+		$.cookie('announcement-dopelists','closed', { expires: 30, path: '/' });
 	});
 
+	if( $.cookie('announcement-dribbble') == "closed") {
+		$(".announcement.dribbble").remove();
+	}
+
+	$(".announcement.dribbble .close").click(function() {
+		$(this).parent().slideUp(500);
+		$.cookie('announcement-dribbble','closed', { expires: 30, path: '/' });
+	});
 
 	//----------------------------------------------------------------------------------//
 	// INCLUDES LOADING

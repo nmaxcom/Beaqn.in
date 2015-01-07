@@ -300,6 +300,10 @@ body.afterformat .listsInfo
 	line-height: 1.6;
 	position: relative;
 }
+	.dribbble {
+		background-color: #EF94B7;
+		color: #76354E;
+	}
 
 .announcement a {
 	font-weight: bold;
@@ -310,6 +314,12 @@ body.afterformat .listsInfo
 .announcement a:hover {
 	color: rgb(161, 162, 0);
 }
+	.dribbble a {
+		color: #903F5E;
+	}
+	.dribbble a:hover {
+		color: #B05176;
+	}
 
 .announcement .close {
 	width: 16px;
@@ -321,6 +331,9 @@ body.afterformat .listsInfo
 	left: 25px;
 	transition: transform 300ms ease-in-out;
 }
+	.dribbble .close {
+		background-image: url("../img/blankfavicon_darker.png");
+	}
 
 .announcement .close:hover {
 	transform: rotate(90deg);
