@@ -1,33 +1,33 @@
 //----------------------------------------------------------------------------------//
+// GOOGLE ANALYTICS
+//----------------------------------------------------------------------------------//
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-46688343-7', 'auto');
+ga('send', 'pageview');
+
+//----------------------------------------------------------------------------------//
+// HOTJAR BETA
+//----------------------------------------------------------------------------------//
+
+(function(f,b){
+	var c;
+	f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+	f._hjSettings={hjid:23430, hjsv:3};
+	c=b.createElement("script");c.async=1;
+	c.src="//static.hotjar.com/c/hotjar-23430.js?sv=3";
+	b.getElementsByTagName("head")[0].appendChild(c); 
+})(window,document);
+
+//----------------------------------------------------------------------------------//
 //
 // DOM READY
 //
 //----------------------------------------------------------------------------------//
 $(document).ready(function(){
-
-	//----------------------------------------------------------------------------------//
-	// GOOGLE ANALYTICS
-	//----------------------------------------------------------------------------------//
-
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-46688343-7', 'auto');
-	ga('send', 'pageview');
-
-	//----------------------------------------------------------------------------------//
-	// HOTJAR BETA
-	//----------------------------------------------------------------------------------//
-
-	(function(f,b){
-		var c;
-		f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
-		f._hjSettings={hjid:23430, hjsv:3};
-		c=b.createElement("script");c.async=1;
-		c.src="//static.hotjar.com/c/hotjar-23430.js?sv=3";
-		b.getElementsByTagName("head")[0].appendChild(c); 
-	})(window,document);
 
 	//----------------------------------------------------------------------------------//
 	// TWITTER API
